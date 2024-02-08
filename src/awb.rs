@@ -1,43 +1,43 @@
 //! 自动白平衡
 //!
-//! AWB 模块的功能是通过改变拍摄设备的色彩通道的增益，
-//！对色温环境所造成的颜色偏差和拍摄设备本身所固有的色彩通道增益的偏差进行统一补偿，
-//！从而让获得的图像能正确反映物体的真实色彩。
+//! AWB 模块的功能是通过改变拍摄设备的色彩通道的增益，The function of the module is to change the gain of the color channel of the shooting device
+//！对色温环境所造成的颜色偏差和拍摄设备本身所固有的色彩通道增益的偏差进行统一补偿，Uniformly compensate for the color deviation caused by the color temperature environment and the deviation of the color channel gain inherent in the shooting equipment itself
+//！从而让获得的图像能正确反映物体的真实色彩。This allows the image obtained to correctly reflect the true color of the object.
 use super::context::Context;
 use super::error::XCamError;
 use super::ffi;
 use super::types::{OpMode, WbGain, WbScene, XCamResult};
 
-/// 一个描述自动白平衡的契定。
+/// 一个描述自动白平衡的契定。A convention describing automatic white balance.
 pub trait AutoWhiteBalance {
-    /// 获取白平衡工作模式。
+    /// 获取白平衡工作模式。Get the white balance working mode.
     fn get_wb_mode(&self) -> XCamResult<OpMode>;
 
-    /// 设置白平衡工作模式。
+    /// 设置白平衡工作模式。Set the white balance working mode.
     fn set_wb_mode(&self, mode: OpMode) -> XCamResult<()>;
 
-    /// 锁定当前白平衡参数。
+    /// 锁定当前白平衡参数。Lock the current white balance parameters
     fn lock_awb(&self) -> XCamResult<()>;
 
-    /// 解锁已被锁定的白平衡参数。
+    /// 解锁已被锁定的白平衡参数。Unlock locked white balance parameters
     fn unlock_awb(&self) -> XCamResult<()>;
 
-    /// 获取白平衡场景。
+    /// 获取白平衡场景。Get the white balance scene
     fn get_mwb_scene(&self) -> XCamResult<WbScene>;
 
-    /// 设置白平衡场景。
+    /// 设置白平衡场景。Set the white balance scene.
     fn set_mwb_scene<T: Into<WbScene>>(&self, scene: T) -> XCamResult<()>;
 
-    /// 获取白平衡增益系数。
+    /// 获取白平衡增益系数。Get the white balance gain coefficient
     fn get_mwb_gain(&self) -> XCamResult<WbGain>;
 
-    /// 设置白平衡增益系数。
+    /// 设置白平衡增益系数。Set the white balance gain coefficient.
     fn set_mwb_gain<T: Into<WbGain>>(&self, gain: T) -> XCamResult<()>;
 
-    /// 获取白平衡色温参数。
+    /// 获取白平衡色温参数。Get the white balance color temperature parameters
     fn get_mwb_ct(&self) -> XCamResult<u32>;
 
-    /// 设置白平衡色温参数。
+    /// 设置白平衡色温参数。Set the white balance color temperature parameters.
     fn set_mwb_ct(&self, ct: u32) -> XCamResult<()>;
 }
 
