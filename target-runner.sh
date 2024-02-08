@@ -6,7 +6,7 @@ if [ -z $1 ]; then
 fi
 
 USER=${TARGET_SSH_USER:=root}
-PEER=${TARGET_SSH_HOST:=192.168.66.123}
+PEER=${TARGET_SSH_HOST:=192.168.18.76}
 
 ENV=LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:/root/lib
 LOCAL_FILE=$1
