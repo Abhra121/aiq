@@ -3,7 +3,7 @@ use std::fs::File;
 use std::io::Write;
 use std::path::PathBuf;
 
-const DEFAULT_RKAIQ_INCLUDE_DIR: &str = "/opt/fullv/2021.02.8-rklaser1/staging/usr/include/rkaiq";
+const DEFAULT_RKAIQ_INCLUDE_DIR: &str = "/usr/include/rkaiq";
 const DEFAULT_TARGET_SYSROOT_DIR: &str = "/opt/fullv/2021.02.8-rklaser1/staging";
 
 #[cfg(feature = "isp_hw_v20")]
