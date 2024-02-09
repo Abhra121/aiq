@@ -2,15 +2,15 @@
 target = "aarch64-unknown-linux-gnu"
 
 [target.aarch64-unknown-linux-gnu]
-linker = "/bin/aarch64-buildroot-linux-gnu-gcc"
+linker = "/bin/aarch64-linux-gnu-gcc"
 runner = "./target-runner.sh"
 rustflags = [
     "-C", "link-arg=-B/usr/local/bin/mold"
 ]
-strip = { path = "/bin/aarch64-buildroot-linux-gnu-strip" }
+strip = { path = "/bin/aarch64-linux-gnu-strip" }
 
 [env]
-CROSS_COMPILE = "/bin/aarch64-buildroot-linux-gnu-"
+CROSS_COMPILE = "/bin/aarch64-linux-gnu-"
 PKG_CONFIG_PATH = "/usr/lib/pkgconfig"
 PKG_CONFIG_SYSROOT_DIR = /usr/local/lib/pkgconfig
 
