@@ -5,7 +5,8 @@ use std::time::Duration;
 
 fn main() {
     // let sne_ent_name = "/dev/v4l-subdev3";
-    let sne_ent_name = "m00_b_ov5695 4-0036-1";
+    //let sne_ent_name = "m00_b_ov5695 4-0036-1";
+    let sne_ent_name = "m00_b_imx415 7-001a";
     let ctx = Context::new(sne_ent_name, "/etc/iqfiles").unwrap();
     println!("Context ready!");
     ctx.set_exp_mode(OpMode::Manual).unwrap();
