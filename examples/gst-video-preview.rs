@@ -13,7 +13,8 @@ fn main() {
     gst::init().unwrap();
 
     // 初始化 AIQ 上下文
-    let sne_ent_name = "m00_b_ov5695 4-0036-1";
+    //let sne_ent_name = "m00_b_ov5695 4-0036-1";
+    let sne_ent_name = "m00_b_imx415 7-001a";
     let ctx = Context::new(sne_ent_name, "/etc/iqfiles").unwrap();
     ctx.set_exp_mode(OpMode::Manual).unwrap();
     ctx.set_wb_mode(OpMode::Manual).unwrap();
