@@ -24,7 +24,7 @@ pretty_env_logger = "0.4"
 
 [features]
 default = ["v5_0", "isp_hw_v30"]
-fullv = ["rkaiq-sys/fullv"]
+#fullv = ["rkaiq-sys/fullv"]
 isp_hw_v20 = ["rkaiq-sys/isp_hw_v20"]
 isp_hw_v21 = ["rkaiq-sys/isp_hw_v21"]
 isp_hw_v30 = ["rkaiq-sys/isp_hw_v30"]
