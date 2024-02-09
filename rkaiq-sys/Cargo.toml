@@ -6,8 +6,8 @@ license = "MIT OR Apache-2.0"
 categories = ["embedded", "external-ffi-bindings", "graphics"]
 description = "Rockchip RKAIQ FFI bindings for Rust"
 documentation = "https://docs.rs/rkaiq-sys"
-repository = "https://github.com/varphone/rkraiq.git"
-authors = [ "Varphone Wong <varphone@qq.com>"]
+repository = "https://github.com/Abhra121/rkraiq.git"
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -17,7 +17,7 @@ authors = [ "Varphone Wong <varphone@qq.com>"]
 bindgen = "0.65"
 
 [features]
-default = ["v5_0", "isp_hw_v30"]
+default = ["v5_0", "isp_hw_v21"]
 fullv = []
 isp_hw_v20 = []
 isp_hw_v21 = []
