@@ -4,7 +4,7 @@ use std::io::Write;
 use std::path::PathBuf;
 
 const DEFAULT_RKAIQ_INCLUDE_DIR: &str = "/usr/include/rkaiq";
-const DEFAULT_TARGET_SYSROOT_DIR: &str = "/opt/fullv/2021.02.8-rklaser1/staging";
+const DEFAULT_TARGET_SYSROOT_DIR: &str = "/usr/local/lib/pkgconfig";
 
 #[cfg(feature = "isp_hw_v20")]
 const DEFAULT_ISP_HW_VER_DEF: &str = "-DISP_HW_V20=1";
