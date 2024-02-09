@@ -12,10 +12,10 @@ strip = { path = "/bin/aarch64-linux-gnu-strip" }
 [env]
 CROSS_COMPILE = "/bin/aarch64-linux-gnu-"
 PKG_CONFIG_PATH = "/usr/lib/pkgconfig"
-PKG_CONFIG_SYSROOT_DIR = /usr/local/lib/pkgconfig
+PKG_CONFIG_SYSROOT_DIR = "/usr/local/lib/pkgconfig"
 
 RKAIQ_INCLUDE_DIR = "/usr/include/rkaiq"
-TARGET_SYSROOT_DIR = "/usr/local/lib/pkgconfig
+TARGET_SYSROOT_DIR = "/usr/local/lib/pkgconfig"
 
 TARGET_SSH_HOST = "192.168.18.76"
 TARGET_SSH_PSWD = ""
