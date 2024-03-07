@@ -18,7 +18,7 @@ RKAIQ_INCLUDE_DIR = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588
 TARGET_SYSROOT_DIR = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging"
 
 TARGET_SSH_HOST = "192.168.18.76"
-TARGET_SSH_PSWD = ""
+TARGET_SSH_PSWD = "orangepi"
 
 [http]
 # proxy = "http://192.168.2.11:8080"
