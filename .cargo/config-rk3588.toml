@@ -2,21 +2,20 @@
 target = "aarch64-unknown-linux-gnu"
 
 [target.aarch64-unknown-linux-gnu]
-linker = "/bin/aarch64-linux-gnu-gcc"
+linker = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/host/bin/aarch64-buildroot-linux-gnu-gcc"
 runner = "./target-runner.sh"
 rustflags = [
     "-C", "link-arg=-B/usr/local/bin/mold"
 ]
-strip = { path = "/bin/aarch64-linux-gnu-strip" }
+strip = { path = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/host/bin/aarch64-buildroot-linux-gnu-strip" }
 
 [env]
-CROSS_COMPILE = "/bin/aarch64-linux-gnu-"
-#PKG_CONFIG_PATH = "/usr/lib/pkgconfig"
-PKG_CONFIG_PATH = "/usr/include"
-PKG_CONFIG_SYSROOT_DIR = "/usr/local/lib/pkgconfig"
+CROSS_COMPILE = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/host/bin/aarch64-buildroot-linux-gnu-"
+PKG_CONFIG_PATH = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging/usr/lib/pkgconfig"
+PKG_CONFIG_SYSROOT_DIR = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging"
 
-RKAIQ_INCLUDE_DIR = "/usr/include/rkaiq"
-TARGET_SYSROOT_DIR = "/usr/local/lib/pkgconfig"
+RKAIQ_INCLUDE_DIR = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging/usr/include/rkaiq"
+TARGET_SYSROOT_DIR = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging"
 
 TARGET_SSH_HOST = "192.168.18.76"
 TARGET_SSH_PSWD = ""
