@@ -3,8 +3,8 @@ use std::fs::File;
 use std::io::Write;
 use std::path::PathBuf;
 
-const DEFAULT_RKAIQ_INCLUDE_DIR: &str = "/usr/include/rkaiq";
-const DEFAULT_TARGET_SYSROOT_DIR: &str = "/usr/local/lib/pkgconfig";
+const DEFAULT_RKAIQ_INCLUDE_DIR: &str = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging/usr/include/rkaiq";
+const DEFAULT_TARGET_SYSROOT_DIR: &str = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging/usr/lib/pkgconfig";
 
 #[cfg(feature = "isp_hw_v20")]
 const DEFAULT_ISP_HW_VER_DEF: &str = "-DISP_HW_V20=1";
