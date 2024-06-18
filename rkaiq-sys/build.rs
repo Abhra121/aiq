@@ -4,7 +4,7 @@ use std::io::Write;
 use std::path::PathBuf;
 
 const DEFAULT_RKAIQ_INCLUDE_DIR: &str = "/usr/include/rkaiq";
-const DEFAULT_TARGET_SYSROOT_DIR: &str = "/usr/lib/"aarch64-unknown-linux-gnu/pkgconfig";
+const DEFAULT_TARGET_SYSROOT_DIR: &str = "/usr/lib/aarch64-unknown-linux-gnu/pkgconfig";
 //const DEFAULT_RKAIQ_INCLUDE_DIR: &str = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging/usr/include/rkaiq";
 //const DEFAULT_TARGET_SYSROOT_DIR: &str = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging/usr/lib/pkgconfig";
 
