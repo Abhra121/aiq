@@ -16,7 +16,7 @@ strip = { path = "/opt/toolchains/crosstools-arm-gcc-5.3-linux-4.1-glibc-2.22-bi
 #CROSS_COMPILE = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/host/bin/aarch64-buildroot-linux-gnu-"
 CROSS_COMPILE = "/opt/toolchains/crosstools-arm-gcc-5.3-linux-4.1-glibc-2.22-binutils-2.25/usr/bin/aarch64-buildroot-linux-gnu-"
 #PKG_CONFIG_PATH = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging/usr/lib/pkgconfig"
-PKG_CONFIG_PATH = "/usr/lib/pkgconfig"
+PKG_CONFIG_PATH = "/usr/lib/x86_64-linux-gnu/pkgconfig"
 #PKG_CONFIG_SYSROOT_DIR = "/home/olive/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging"
 PKG_CONFIG_SYSROOT_DIR = "/"
 
