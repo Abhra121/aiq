@@ -14,13 +14,14 @@ strip = { path = "/home/cmt2/proj/rk3588_sdk/buildroot/output/firefly_rk3588/hos
 [env]
 CROSS_COMPILE = "/home/cmt2/proj/rk3588_sdk/buildroot/output/firefly_rk3588/host/bin/aarch64-buildroot-linux-gnu-"
 #CROSS_COMPILE = "/opt/toolchains/crosstools-arm-gcc-5.3-linux-4.1-glibc-2.22-binutils-2.25/usr/bin/aarch64-buildroot-linux-gnu-"
-PKG_CONFIG_PATH = "/home/cmt2/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging/usr/lib/pkgconfig"
+#PKG_CONFIG_PATH = "/home/cmt2/proj/rk3588_sdk/buildroot/output/firefly_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/lib/pkgconfig"
+#PKG_CONFIG_PATH = "/home/cmt2/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging/usr/lib/pkgconfig"
 #PKG_CONFIG_PATH = "/usr/lib/x86_64-linux-gnu/pkgconfig"
-PKG_CONFIG_SYSROOT_DIR = "/home/cmt2/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging"
+PKG_CONFIG_SYSROOT_DIR = "/home/cmt2/proj/rk3588_sdk/buildroot/output/firefly_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/lib/pkgconfig"
 #PKG_CONFIG_SYSROOT_DIR = "/"
 
 RKAIQ_INCLUDE_DIR = "/home/cmt2/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging/usr/include/rkaiq"
-TARGET_SYSROOT_DIR = "/home/cmt2/proj/rk3588_sdk/buildroot/output/firefly_rk3588/staging"
+TARGET_SYSROOT_DIR = "/home/cmt2/proj/rk3588_sdk/buildroot/output/firefly_rk3588/host/aarch64-buildroot-linux-gnu/sysroot/lib/pkgconfig"
 #RKAIQ_INCLUDE_DIR = "/usr/include/rkaiq"
 #TARGET_SYSROOT_DIR = "/"
 
