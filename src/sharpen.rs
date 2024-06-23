@@ -15,7 +15,7 @@ impl Sharpen for Context {
     fn get_sharpness(&self) -> XCamResult<u32> {
         let mut level: u32 = 0;
         unsafe {
-            XCamError::from(ffi::rk_aiq_uapi_getSharpness(
+            XCamError::from(ffi::rk_aiq_uapi2_getSharpness(
                 self.internal.as_ptr(),
                 &mut level,
             ))
@@ -26,7 +26,7 @@ impl Sharpen for Context {
 
     fn set_sharpness(&self, level: u32) -> XCamResult<()> {
         unsafe {
-            XCamError::from(ffi::rk_aiq_uapi_setSharpness(self.internal.as_ptr(), level)).ok()
+            XCamError::from(ffi::rk_aiq_uapi2_setSharpness(self.internal.as_ptr(), level)).ok()
         }
     }
 }
